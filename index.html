@@ -3,13 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
     <title>Hello World!</title>
+    <script src="myScript.js" defer></script>
+    <script src="hyperscript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Hello World!</h1>
     We are using Node.js <span id="node-version"></span>,
     Chromium <span id="chrome-version"></span>,
     and Electron <span id="electron-version"></span>.
+    <hr />
+    
+    <input id="prompt" />
+    <!-- <button _="on click get window.ai.generateImages(#prompt's value) then put it + '<br/>' at the end of #log">Generate Images ?</button> -->
+    <button _="
+    on click
+    get window.ai.generateImages(#prompt's value)
+    set imgs to it's data's url
+    for img in imgs
+    make an <img/> then set it's src to img
+    put it at the end of #log
+    ">Generate Images ?</button>
+    <button _="on click set #log's innerHTML to ''">Clear</button>
+    <div id="log"></div>
   </body>
 </html>
