@@ -6,6 +6,7 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
     <title>Hello World!</title>
     <script src="myScript.js" defer></script>
+    <script src="myHyperscript._hs" type="text/hyperscript" defer></script>
     <script src="hyperscript.js" defer></script>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -23,10 +24,12 @@
     get window.ai.generateImages(#prompt's value)
     set imgs to it's data's url
     for img in imgs
-    make an <img/> then set it's src to img
+    make an <img @_ /> then set it's src to img
+    call setHyperscript(it, 'install Copyable()')
     put it at the end of #log
-    ">Generate Images ?</button>
+    ">Generate Images</button>
     <button _="on click set #log's innerHTML to ''">Clear</button>
+    <button _="on click call copyImageToClipboard(the next <img />)">Copy</button>
     <div id="log"></div>
   </body>
 </html>

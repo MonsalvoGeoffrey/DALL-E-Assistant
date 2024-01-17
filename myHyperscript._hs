@@ -1,0 +1,15 @@
+behavior Copyable
+    on click
+        call copyImageToClipboard(me)
+    end
+end
+
+def refreshHyperscript(myElement)
+    call _hyperscript.processNode(myElement)
+end
+
+def setHyperscript(myElement, myHyperscript)
+    setAttribute("_", myHyperscript) on myElement
+    call refreshHyperscript(myElement)
+    return myElement
+end
