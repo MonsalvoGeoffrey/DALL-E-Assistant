@@ -1,6 +1,6 @@
 behavior Copyable
     on click
-        call copyImageToClipboard(me)
+        call copy(me)
     end
 end
 

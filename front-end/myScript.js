@@ -3,6 +3,16 @@
 // })
 
 
+
+async function copy(element) {
+    if (element.nodeName.toLowerCase() === "img") {
+        copyImageToClipboard(element);
+    } else {
+        navigator.clipboard.writeText(element.innerText);
+    }
+}
+
+
 async function copyImageToClipboard(image) {
     // const image = document.getElementById('myImage');
     const canvas = document.createElement('canvas');

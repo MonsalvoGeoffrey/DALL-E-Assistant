@@ -21,10 +21,10 @@ const generateImages = async (prompt) => {
         "created": 1589478378,
         "data": [
             {
-                "url": "https://picsum.photos/200"
+                "url": "https://picsum.photos/1024"
             },
             {
-                "url": "https://picsum.photos/300"
+                "url": "https://picsum.photos/1024"
             }
         ]
     }

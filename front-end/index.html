@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>Hello World!</title>
+    <script src="myScript.js" defer></script>
+    <script src="myHyperscript._hs" type="text/hyperscript" defer></script>
+    <script src="hyperscript.js" defer></script>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header class="bg-primary-500 p-2 m-4">
+      <h1>DALL-E Assistant</h1>
+    </header>
+    <main>
+      <!-- <input id="prompt" />
+      <button _="
+      on click
+      get window.ai.generateImages(#prompt's value)
+      set imgs to it's data's url
+      for img in imgs
+      make an <img  /> then set it's src to img
+      add .generated-image to it
+      call setHyperscript(it, 'install Copyable()')
+      put it at the end of #gallery
+      ">Generate Images</button>
+      <button _="on click set #gallery's innerHTML to ''">Clear</button>
+      <div id="gallery"></div> -->
+    </main>
+    <footer>
+
+    </footer>
+
+  </body>
+</html>
