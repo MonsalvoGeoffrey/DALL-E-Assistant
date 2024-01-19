@@ -6,12 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "watch": "npx tailwindcss -i ./front-end/src_style.css -o ./front-end/style.css --watch"
+    "watch": "npx tailwindcss -i ./src_css/style.css -o ./static/css/style.css --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^28.1.3",
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {

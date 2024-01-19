@@ -5,15 +5,15 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
     <title>Hello World!</title>
-    <script src="myScript.js" defer></script>
-    <script src="myHyperscript._hs" type="text/hyperscript" defer></script>
-    <script src="hyperscript.js" defer></script>
+    <script src="{{ url_for('static', filename='scripts/myScript.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='scripts/myHyperscript._hs') }}" type="text/hyperscript" defer></script>
+    <script src="{{ url_for('static', filename='scripts/hyperscript.js') }}" defer></script>
     <!-- <link rel="stylesheet" href="reset.css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
-  <body>
+  <body class="bg-background">
 
-    <header class="bg-primary-500 p-2 m-4">
+    <header class="bg-primary p-4 m-6 text-lg rounded-2xl text-text shadow-lg">
       <h1>DALL-E Assistant</h1>
     </header>
     <main>

@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* colors https: //www.realtimecolors.com/?colors=0e1307-f6faf0-86be46-96daa8-72cea0&fonts=Poppins-Poppins */
+@layer base {
+    :root {
+        --text: #0e1307;
+        --background: #f6faf0;
+        --primary: #86be46;
+        --secondary: #96daa8;
+        --accent: #72cea0;
+    }
+
+    .dark {
+        --text: #f3f8ec;
+        --background: #0b0f05;
+        --primary: #81b941;
+        --secondary: #256a37;
+        --accent: #318c5e;
+    }
+}
+
+
+
+
+
+
+/* :root[data-theme="light"] {
+    --text: #0e1307;
+    --background: #f6faf0;
+    --primary: #86be46;
+    --secondary: #96daa8;
+    --accent: #72cea0;
+}
+
+:root[data-theme="dark"] {
+    --text: #f3f8ec;
+    --background: #0b0f05;
+    --primary: #81b941;
+    --secondary: #256a37;
+    --accent: #318c5e;
+} */
+
+
+
+
+
+/* npx tailwindcss -i ./front-end/src_style.css -o ./front-end/style.css --watch */
+
+
+
+
+
+
+
+/* body {
+    background-color: lightblue;
+}
+
+
+header {
+    width: auto;
+    background-color: orange;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.generated-image {
+    width: 128px;
+    height: 128px;
+} */
